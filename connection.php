@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $username = "root";
-$password = "Accesssql.0";
+$password = "";
 $database = "se_assignment_db";
 
 $conn = new mysqli($host, $username, $password, $database);
