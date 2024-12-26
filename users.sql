@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2024 at 07:24 AM
+-- Generation Time: Dec 26, 2024 at 04:33 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -24,19 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `example`
---
-
-CREATE TABLE `example` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `age` int(3) NOT NULL,
-  `email` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `users`
 --
 
@@ -48,14 +35,15 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Indexes for dumped tables
+-- Dumping data for table `users`
 --
 
+INSERT INTO `users` (`id`, `user_name`, `password`, `name`) VALUES
+(7, 'jomygeorge', '93ff026b62de79c4940131bf92e9d2bd', 'Jomy George');
+
 --
--- Indexes for table `example`
+-- Indexes for dumped tables
 --
-ALTER TABLE `example`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -68,16 +56,10 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `example`
---
-ALTER TABLE `example`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
